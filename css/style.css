@@ -1,11 +1,30 @@
-p{
-    color: red;
+h1{
+    color: #ff00ff;
+    font-weight: bold;
 }
 
+/*ESTO ES IUN COMENTARIO*/
 .point{
     color: green;
 }
 
 #identifyer{
     color: brown;
+}
+
+/*COLOR PRIMARIOS
+*/
+
+.is-centered{
+    text-align: center;
+    
+}
+
+img{
+    padding: 2px 4px;
+    margin: 10px 20px;
+}
+
+.basic-form{
+margin: 5%;
 }
