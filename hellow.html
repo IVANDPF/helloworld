@@ -1,76 +1,74 @@
 <!DOCTYPE html>
-    <html lang="en">    
-        <head>
-            <!-- meta and initial defnitions-->
-            <meta name="description" content="Basic form">
-            <meta name="author" content="CodingDojo">
-            <meta name="keywords" content="Basic form html css codingdojo">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta charset="UTF-8">
+<html lang="en">
+	<head>
+		<!-- meta and initial defnitions-->
+		<meta name="description" content="Basic form" />
+		<meta name="author" content="CodingDojo" />
+		<meta name="keywords" content="Basic form html css codingdojo" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
 
-            <title>Basic Form</title>
+		<title>Basic Form</title>
 
-            <link href="css/style.css" rel="stylesheet" type="text/css">
-        </head>
-        <body>
-            <div class="container">
-                <form>
-
-                    <!--ACCOUNT-->
-                    <div class="row">
-                        <h4>Account</h4>
-                        <div class="input-group input-group-icon">
-                            <input type="text" placeholder="Fullname">
-                            <div class="input-icon">
-                                <i class="fa fa-user"></i>
-                            </div>
-                        </div> 
-                        <div class="input-group input-group-icon">
-                            <input type="email" placeholder="Email">
-                            <div class="input-icon">
-                                <i class="fa fa-user"></i>
-                            </div>
-                        </div>
-                        <div class="input-group input-group-icon">
-                            <input type="password" placeholder="Password">
-                            <div class="input-icon">
-                                <i class="fa fa-user"></i>
-                            </div>
-                        </div>   
-                    </div>
-
-                    <!--BIRTH-->
-                    <div class="row">
-                        <div class="col-half">
-                            <h4>Birthday</h4>
-                            <div class="input-group">
-                                <div class="col-third">
-                                    <input type="text" placeholder="DD">    
-                                </div>
-                                <div class="col-third">
-                                    <input type="text" placeholder="MM">    
-                                </div>
-                                <div class="col-third">
-                                    <input type="text" placeholder="YYYY">    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--GENDER LIST-->
-                    <div class="row">
-                        <div class="col-half">
-                            <h4>Gender</h4>
-                            <div class="input-group">
-                                <input id="gender-m" type="radio" name="gender" value="male">
-                                <label for="gender-m">Male</label>
-                                <input id="gender-f" type="radio" name="gender" value="female">
-                                <label for="gender-f">Female</label>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-        </div>
-        </body>
-    </html>
-
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="container">
+			<form class="form-container">
+				<!--ACCOUNT-->
+				<div class="row">
+					<h4>Account</h4>
+					<div class="input-group input-group-icon">
+						<input type="text" placeholder="Fullname" />
+						<div class="input-icon">
+							<i class="fa fa-user"></i>
+						</div>
+					</div>
+					<div class="input-group input-group-icon">
+						<input type="email" placeholder="Email" />
+						<div class="input-icon">
+							<i class="fa fa-user"></i>
+						</div>
+					</div>
+					<div class="input-group input-group-icon">
+						<input type="password" placeholder="Password" />
+						<div class="input-icon">
+							<i class="fa fa-user"></i>
+						</div>
+					</div>
+				</div>
+				<div class="form-1">
+					<!--BIRTH-->
+					<div class="row">
+						<div class="col-half">
+							<h4>Birthday</h4>
+							<div class="input-group">
+								<div class="col-third">
+									<input type="text" placeholder="DD" />
+								</div>
+								<div class="col-third">
+									<input type="text" placeholder="MM" />
+								</div>
+								<div class="col-third">
+									<input type="text" placeholder="YYYY" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--GENDER LIST-->
+					<div class="row">
+						<div class="col-half">
+							<h4>Gender</h4>
+							<div class="input-group">
+								<input id="gender-m" type="radio" name="gender" value="male" />
+								<label for="gender-m">Male</label>
+								<input id="gender-f" type="radio" name="gender" value="female" />
+								<label for="gender-f">Female</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
