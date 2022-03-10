@@ -22,6 +22,16 @@ function validarForm() {
 		alert('La contraseña es obligatoria');
 		return false;
 	}
+
+	if (password.trim().length < 8) {
+		alert('La contraseña debe tener al menos 8 caracteres');
+		return false;
+	}
+
+	if (password.trim().length > 17) {
+		alert('La contraseña debe tener menos de 17 caracteres');
+		return false;
+	}
 }
 
 function validarEmail(email) {
