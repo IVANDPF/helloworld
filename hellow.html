@@ -11,33 +11,27 @@
 		<title>Basic Form</title>
 
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
-        <script>
-            var a;
-            var b = 5;
-
-            console.log(a);
-            console.log(b);
-            console.log(c);
-
-        </script>
+    <script src="js/script.js"></script>
 	</head>
 	<body>
 		<div class="container">
-            <form>
+            <form name="fvalida">
               <div class="row">
                 <h4>Account</h4>
                 <div class="input-group input-group-icon">
-                  <input type="text" placeholder="Full Name"/>
+                  <!--VALIDAR ESPACIOS EN BLANCO-->
+                  <input type="text" placeholder="Full Name" name="nombre" id="FullName" maxlength="100"/>
                   <div class="input-icon"><i class="fa fa-user"></i></div>
                 </div>
                 <div class="input-group input-group-icon">
-                  <input type="email" placeholder="Email Adress"/>
+                  <input type="email" placeholder="Email Adress" name="emailForm" required/>
                   <div class="input-icon"><i class="fa fa-envelope"></i></div>
                 </div>
                 <div class="input-group input-group-icon">
-                  <input type="password" placeholder="Password"/>
+                  <input type="password" placeholder="Password" name="passwordForm" required/>
                   <div class="input-icon"><i class="fa fa-key"></i></div>
                 </div>
+                <input type="button" value="Enviar" onclick="valida_envio()">
               </div>
               <div class="row">
                 <div class="col-half">
@@ -103,6 +97,8 @@
                 </div>
               </div>
             </form>
-          </div>
+    </div>
+
+    
 	</body>
 </html>
