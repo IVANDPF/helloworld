@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+            body{
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .box-wrapper{
+                width: 100vw;
+                flex-direction: column;
+                display: flex;
+            }
+
+            #box1{
+                padding: 10px;
+                height: 30px;
+                border: solid 1px red;
+                line-height: 30px;
+            }
+
+            #box2{
+                padding: 10px;
+                height: 30px;
+                border: solid 1px green;
+                
+            }
+            #box3{
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                border: solid 1px blue;
+                
+            }
+        </style>
+    </head>
+	<body>
+		<div class="box-wrapper">
+            <div id="box1">
+                DIV 1
+            </div>
+            <div id="box2">
+                DIV 2
+            </div>
+        </div>
+
+        <div id="box3">
+            <div id="box4">
+                DIV 4
+            </div>
+
+            <div class="middle-column">
+                <div id="box5">
+                    DIV 5
+                </div>
+                <div id="box6">
+                    DIV 6
+                </div>
+                <div id="box7">
+                    DIV 7
+                </div>
+            </div>
+
+            <div id="box8">
+                DIV 8
+            </div>
+        </div>
+	</body>
+</html>
