@@ -63,3 +63,66 @@ function valida_ifIsChecked(){
     } 
 }
 
+
+/////////////// OBJETOS
+var myCar = new Object();
+myCar.marca = 'AUDI';
+myCar.modelo = 'Q5';
+myCar.motor = '2.0';
+myCar.color = 'Black';
+
+console.log(myCar)
+
+var myCar2 = {
+    marca: 'VW',
+    modelo: 'Tiguan',
+    motor: '2.0',
+    color: 'White',
+    confort:{
+        cuero: 'si',
+        techocorredizo: 'no'
+    }
+}
+
+console.log(myCar2)
+
+
+
+
+/////////////// ARREGLOS
+var smartphones = ['Samsung', 'Blackberry', 'Apple', ['Xiaomi', 'Huawei']]
+console.log(smartphones)
+console.log(smartphones[3][1])
+
+//ANADIR AL FINAL
+smartphones.push('Motorola')
+
+//ELIMINAR EL ULTIMO ELEMENTO
+smartphones.pop()
+console.log(smartphones.length)
+
+//ANADIR AL INICIO
+smartphones.unshift('Kyocera')
+
+//ELIMINAR EL PRIMER ELEMENTO
+smartphones.shift()
+
+smartphones.forEach(function(elemento, indice, array){
+    console.log(elemento, indice)
+
+})
+
+//ENCONTRAR EL INDICE
+smartphones.indexOf('Apple')
+
+const miPass = /d(b+)(d)/i
+console.log(miPass.exec('dasfdndsfdbdwer'))
+
+
+
+
+
+
+
+
+
